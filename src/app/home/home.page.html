@@ -1,3 +1,8 @@
-<ion-button (click)="onClick()">
-  Click me
-</ion-button>
+<ion-content padding>
+  <ion-button (click)="takePhoto()">
+    Click me
+  </ion-button>
+  <p align="center"><img src="{{ base64Image }}"></p>
+</ion-content>
+
+
