@@ -2,7 +2,24 @@
   <ion-button (click)="takePhoto()">
     Click me
   </ion-button>
-  <p align="center"><img src="{{ base64Image }}"></p>
+  <p align="center"><img src="{{ myPhoto }}" *ngIf="myPhoto"></p>
 </ion-content>
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="camera">
+    <ion-icon name="camera">
+      <i class="material-icons">
+        camera_alt
+      </i>
+    </ion-icon>
+    <ion-label>HOME</ion-label>
+  </ion-tab-button>
 
-
+  <ion-tab-button tab="map">
+    <ion-icon name="map">
+      <i class="material-icons">
+        explore
+        </i>
+    </ion-icon>
+    <ion-label>MAP</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
