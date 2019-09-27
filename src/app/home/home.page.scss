@@ -3,8 +3,14 @@ img{
     height: 100%;
 }
 
-ion-tab-button{
+ion-tab-bar{
     background-color: var(--primary);
     width: 100vw;
+
+}
+
+ion-tab-button{
+    --ripple-color: var(--secondary-dark);
+    background-color: var(--primary);
     color: #ffffff;
 }
